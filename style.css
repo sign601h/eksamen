@@ -3,20 +3,6 @@
     padding: 0;
 }
 
-#front_menu {
-    z-index: 1;
-    position: relative;
-    width: 25%;
-    height: 19vw;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    left: 62%;
-}
-
 h2 {
     color: white;
     font-family: "Orbitron", sans-serif;
@@ -45,6 +31,24 @@ a h2:hover {
     width: 100vw;
     background-color: #000312;
     overflow: hidden;
+}
+
+/* ----------------------------------------------------------------------------
+FRONTPAGE
+---------------------------------------------------------------------------- */
+
+#front_menu {
+    z-index: 1;
+    position: relative;
+    width: 25%;
+    height: 19vw;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    left: 62%;
 }
 
 .planet {
@@ -212,4 +216,73 @@ a h2:hover {
     to {
         transform: rotate(360deg) translateX(37vw) rotate(-360deg);
     }
+}
+
+/* ----------------------------------------------------------------------------
+PORTFOLIO
+---------------------------------------------------------------------------- */
+
+.stjerne.planet {
+    background-color: yellow;
+    height: 25vw;
+    width: 25vw;
+    left: 0;
+}
+
+.bane {
+    border-style: dashed;
+    border-color: white;
+    left: 0;
+    position: fixed;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bane.web {
+    width: 60vw;
+    height: 60vw;
+}
+
+.pweb.planet {
+    background-color: aliceblue;
+    width: 3vw;
+    height: 3vw;
+    left: 30vw;
+}
+
+.bane.ux {
+    width: 92vw;
+    height: 92vw;
+}
+
+.pux.planet {
+    background-color: peachpuff;
+    width: 6vw;
+    height: 6vw;
+    left: 46vw;
+}
+
+.bane.ani {
+    width: 127vw;
+    height: 127vw;
+}
+
+.pani.planet {
+    background-color: skyblue;
+    width: 6vw;
+    height: 6vw;
+    left: 63.5vw;
+}
+
+.bane.content {
+    width: 160vw;
+    height: 160vw;
+}
+
+.pcontent.planet{
+    background-color: orange;
+    width: 4vw;
+    height: 4vw;
+    left: 80vw;
 }
