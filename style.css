@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#front_menu {
+    z-index: 1;
+    position: relative;
+    width: 25%;
+    height: 19vw;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    left: 62%;
+}
+
+h2 {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    font-size: 6vw;
+    text-shadow: 1px 1px 3px black;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000312;
+    overflow: hidden;
+}
+
+.planet {
+    position: fixed;
+    top: 50%;
+    left: 28%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sol.planet {
+    background-color: yellow;
+    height: 9vw;
+    width: 9vw;
+}
+
+.merkur.planet {
+    height: 0.4vw;
+    width: 0.4vw;
+    background-color: aliceblue;
+    animation: merkurOrbit 1s linear infinite;
+}
+
+@keyframes merkurOrbit {
+    from {
+        transform: rotate(0deg) translateX(1300%) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(1300%) rotate(-360deg);
+    }
+}
+
+.venus.planet {
+    height: 1.2vw;
+    width: 1.2vw;
+    background-color: peachpuff;
+    animation: venusOrbit 2.5s linear infinite;
+}
+
+@keyframes venusOrbit {
+    from {
+        transform: rotate(0deg) translateX(7vw) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(7vw) rotate(-360deg);
+    }
+}
+
+.jorden.planet {
+    height: 1.2vw;
+    width: 1.2vw;
+    background-color: skyblue;
+    animation: jordenOrbit 4s linear infinite;
+}
+
+@keyframes jordenOrbit {
+    from {
+        transform: rotate(0deg) translateX(9vw) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(9vw) rotate(-360deg);
+    }
+}
+
+.mars.planet {
+    height: 0.8vw;
+    width: 0.8vw;
+    background-color: orange;
+    animation: marsOrbit 7.5s linear infinite;
+}
+
+@keyframes marsOrbit {
+    from {
+        transform: rotate(0deg) translateX(11vw) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(11vw) rotate(-360deg);
+    }
+}
+
+.jupiter.planet {
+    height: 5vw;
+    width: 5vw;
+    background-color: darksalmon;
+    animation: jupiterOrbit 47s linear infinite;
+}
+
+@keyframes jupiterOrbit {
+    from {
+        transform: rotate(0deg) translateX(19vw) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(19vw) rotate(-360deg);
+    }
+}
+
+.saturn.planet {
+    height: 4vw;
+    width: 4vw;
+    background-color: coral;
+    animation: saturnOrbit 117s linear infinite;
+}
+
+@keyframes saturnOrbit {
+    from {
+        transform: rotate(0deg) translateX(25vw) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(25vw) rotate(-360deg);
+    }
+}
+
+.uranus.planet {
+    height: 2vw;
+    width: 2vw;
+    background-color: dodgerblue;
+    animation: uranusOrbit 336s linear infinite;
+}
+
+@keyframes uranusOrbit {
+    from {
+        transform: rotate(0deg) translateX(30vw) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(30vw) rotate(-360deg);
+    }
+}
+
+.neptun.planet {
+    height: 2vw;
+    width: 2vw;
+    background-color: dodgerblue;
+    animation: neptunOrbit 660s linear infinite;
+}
+
+@keyframes neptunOrbit {
+    from {
+        transform: rotate(0deg) translateX(34vw) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(34vw) rotate(-360deg);
+    }
+}
+
+.pluto.planet {
+    height: 0.2vw;
+    width: 0.2vw;
+    background-color: lightgrey;
+    animation: plutoOrbit 1000s linear infinite;
+}
+
+@keyframes plutoOrbit {
+    from {
+        transform: rotate(0deg) translateX(37vw) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(37vw) rotate(-360deg);
+    }
+}
