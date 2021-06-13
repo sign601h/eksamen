@@ -11,21 +11,38 @@ h2 {
     text-shadow: 1px 1px 3px black;
 }
 
+h3 {
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    font-size: 2vw;
+    text-shadow: 1px 1px 3px black;
+}
+
 a {
     text-decoration: none;
 }
 
-a h2 {
+a h2, a h3 {
     transition-duration: 0.7s;
 }
 
-a h2:hover {
+a h2:hover{
     text-decoration: underline;
     text-decoration-color: yellow;
     transform: translateX(-5%);
     transition-duration: 0.7s;
 }
 
+a .planet:hover {
+    border-style: solid;
+    border-color: yellow;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    transition-duration: 0.7;
+    text-decoration-thickness: 0.13vw;
+}
+                    
 #container {
     height: 100vh;
     width: 100vw;
@@ -38,7 +55,7 @@ FRONTPAGE
 ---------------------------------------------------------------------------- */
 
 #front_menu {
-    z-index: 1;
+    z-index: 2;
     position: relative;
     width: 25%;
     height: 19vw;
@@ -57,6 +74,7 @@ FRONTPAGE
     left: 28%;
     border-radius: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .sol.planet {
@@ -256,6 +274,12 @@ PORTFOLIO
     height: 92vw;
 }
 
+.planet h3 {
+    position: relative;
+    left: 80%;
+    top: -3vw;
+}
+
 .pux.planet {
     background-color: peachpuff;
     width: 6vw;
@@ -286,3 +310,20 @@ PORTFOLIO
     height: 4vw;
     left: 80vw;
 }
+
+.back {
+    background-image: url(back.svg);
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 2.5vw;
+    left: 2.5vw;
+    z-index: 1;
+    opacity: 0.75;
+}
+
+.back:hover {
+    opacity: 1;
+}
+
+
