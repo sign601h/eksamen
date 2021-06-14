@@ -23,15 +23,14 @@ a {
     text-decoration: none;
 }
 
-a h2, a h3 {
+a h2, a h3, p {
     transition-duration: 0.7s;
 }
 
-a h2:hover{
+a h2:hover, a p:hover{
     text-decoration: underline;
     text-decoration-color: yellow;
     transform: translateX(-5%);
-    transition-duration: 0.7s;
 }
 
 a .planet:hover {
@@ -257,7 +256,7 @@ PORTFOLIO
     transform: translate(-50%, -50%);
 }
 
-.bane.web {
+.bane.bweb {
     width: 60vw;
     height: 60vw;
 }
@@ -269,7 +268,7 @@ PORTFOLIO
     left: 30vw;
 }
 
-.bane.ux {
+.bane.bux {
     width: 92vw;
     height: 92vw;
 }
@@ -287,7 +286,7 @@ PORTFOLIO
     left: 46vw;
 }
 
-.bane.ani {
+.bane.bani {
     width: 127vw;
     height: 127vw;
 }
@@ -299,7 +298,7 @@ PORTFOLIO
     left: 63.5vw;
 }
 
-.bane.content {
+.bane.bcontent {
     width: 160vw;
     height: 160vw;
 }
@@ -322,8 +321,93 @@ PORTFOLIO
     opacity: 0.75;
 }
 
-.back:hover {
+.back:hover, #left:hover, #right:hover, #more:hover {
     opacity: 1;
 }
 
+/* ----------------------------------------------------------------------------
+UNDERSIDE
+---------------------------------------------------------------------------- */
 
+#graphics {
+    width: 38vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navigation {
+    width: 20vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left {
+    background-image: url(back.svg);
+    height: 5vw;
+    width: 5vw;
+    opacity: 0.75;
+}
+
+#right {
+    background-image: url(right.svg);
+    height: 5vw;
+    width: 5vw;
+    opacity: 0.75;
+}
+
+.uplanet {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+.web {
+    background-color: aliceblue;
+}
+
+.ux {
+    background-color: peachpuff;
+}
+
+.animation {
+    background-color: skyblue;
+}
+
+.content {
+    background-color: orange;
+}
+
+.text {
+    color: white;
+    font-family: 'Chakra Petch';
+    width: 42vw;
+    position: relative;
+    top: 12vw;
+}
+
+underside #container {
+    display: flex;
+    overflow: scroll;
+    justify-content: space-evenly;
+}
+
+#videre {
+    margin: 3vh 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: right;
+    color: white;
+}
+
+#more {
+    background-image: url(right.svg);
+    height: 30px;
+    width: 30px;
+    opacity: 0.75;
+    margin-right: 5vw;
+}
