@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-h2 {
+h1 {
     color: white;
     font-family: "Orbitron", sans-serif;
     font-weight: 800;
@@ -11,7 +11,7 @@ h2 {
     text-shadow: 1px 1px 3px black;
 }
 
-h3 {
+h2, h3 {
     color: white;
     font-family: "Orbitron", sans-serif;
     font-weight: 800;
@@ -19,15 +19,28 @@ h3 {
     text-shadow: 1px 1px 3px black;
 }
 
+h2 {
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.55vw;
+    margin-bottom: 6px;
+}
+
+.text.cv p {
+    margin-bottom: 40px;
+}
+
 a {
     text-decoration: none;
 }
 
-a h2, a h3, p {
+a h1, a h2, p {
     transition-duration: 0.7s;
 }
 
-a h2:hover, a p:hover{
+a h1:hover, a p:hover{
     text-decoration: underline;
     text-decoration-color: yellow;
     transform: translateX(-5%);
@@ -273,7 +286,7 @@ PORTFOLIO
     height: 92vw;
 }
 
-.planet h3 {
+.planet h2 {
     position: relative;
     left: 80%;
     top: -3vw;
@@ -383,10 +396,11 @@ UNDERSIDE
 
 .text {
     color: white;
-    font-family: 'Chakra Petch';
+    font-family: 'Chakra Petch', sans-serif;
     width: 42vw;
     position: relative;
     top: 12vw;
+    height: auto;
 }
 
 underside #container {
@@ -410,4 +424,9 @@ underside #container {
     width: 30px;
     opacity: 0.75;
     margin-right: 5vw;
+}
+
+.title {
+    position: relative;
+    top: 9vw
 }
