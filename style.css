@@ -7,15 +7,16 @@ h1 {
     color: white;
     font-family: "Orbitron", sans-serif;
     font-weight: 800;
-    font-size: 6vw;
+    font-size: 5.9rem;
     text-shadow: 1px 1px 3px black;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: white;
     font-family: "Orbitron", sans-serif;
     font-weight: 800;
-    font-size: 2vw;
+    font-size: 1.8rem;
     text-shadow: 1px 1px 3px black;
 }
 
@@ -24,7 +25,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.55vw;
+    font-size: 20px;
     margin-bottom: 6px;
 }
 
@@ -36,11 +37,14 @@ a {
     text-decoration: none;
 }
 
-a h1, a h2, p {
+a h1,
+a h2,
+p {
     transition-duration: 0.7s;
 }
 
-a h1:hover, a p:hover{
+a h1:hover,
+a p:hover {
     text-decoration: underline;
     text-decoration-color: yellow;
     transform: translateX(-5%);
@@ -54,12 +58,18 @@ a .planet:hover {
     transition-duration: 0.7;
     text-decoration-thickness: 0.13vw;
 }
-                    
+
 #container {
     height: 100vh;
     width: 100vw;
     background-color: #000312;
     overflow: hidden;
+}
+
+#stars{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
 }
 
 /* ----------------------------------------------------------------------------
@@ -69,7 +79,7 @@ FRONTPAGE
 #front_menu {
     z-index: 2;
     position: relative;
-    width: 25%;
+    width: 100%;
     height: 19vw;
     top: 50%;
     transform: translateY(-50%);
@@ -77,7 +87,7 @@ FRONTPAGE
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    left: 62%;
+    right: 10vw;
 }
 
 .planet {
@@ -316,7 +326,7 @@ PORTFOLIO
     height: 160vw;
 }
 
-.pcontent.planet{
+.pcontent.planet {
     background-color: orange;
     width: 4vw;
     height: 4vw;
@@ -330,11 +340,14 @@ PORTFOLIO
     position: fixed;
     top: 2.5vw;
     left: 2.5vw;
-    z-index: 1;
+    z-index: 2;
     opacity: 0.75;
 }
 
-.back:hover, #left:hover, #right:hover, #more:hover {
+.back:hover,
+#left:hover,
+#right:hover,
+#more:hover {
     opacity: 1;
 }
 
@@ -349,6 +362,7 @@ UNDERSIDE
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 2;
 }
 
 #navigation {
@@ -356,6 +370,8 @@ UNDERSIDE
     height: auto;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
+
 }
 
 #left {
@@ -363,6 +379,7 @@ UNDERSIDE
     height: 5vw;
     width: 5vw;
     opacity: 0.75;
+    z-index: 2;
 }
 
 #right {
@@ -370,6 +387,7 @@ UNDERSIDE
     height: 5vw;
     width: 5vw;
     opacity: 0.75;
+    z-index: 2;
 }
 
 .uplanet {
@@ -416,6 +434,7 @@ underside #container {
     gap: 10px;
     justify-content: right;
     color: white;
+    z-index: 2;
 }
 
 #more {
@@ -429,4 +448,147 @@ underside #container {
 .title {
     position: relative;
     top: 9vw
+}
+
+/* ----------------------------------------------------------------------------
+MOBILE
+---------------------------------------------------------------------------- */
+@media (max-width: 800px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #front_menu {
+        top: 20%;
+        height: 20%;
+    }
+
+    #solsystem {
+        position: relative;
+        top: 35%;
+        transform: scale(2.3);
+    }
+
+    .bane {
+        border-width: 2.5px;
+    }
+
+    .pweb.planet {
+        transform: translate(-3.7vw, 10vw);
+    }
+
+    .pux.planet {
+        transform: translate(-9vw, -27vw);
+    }
+
+    .pani.planet {
+        transform: translate(-18vw, 38vw);
+    }
+
+    .pcontent.planet {
+        transform: translate(-3vw, -15vw);
+    }
+
+    .pcontent.planet h2 {
+        left: -450%;
+        top: 2.5vw;
+    }
+
+    underside #container {
+        display: inline-block;
+    }
+
+    #graphics {
+        margin-top: 17%;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #navigation {
+        width: 40vw;
+    }
+
+    #right, #left {
+        height: 40px;
+        width: 40px;
+    }
+
+    .text {
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 5vw;
+    }
+
+    .title {
+        text-align: center;
+        margin: 5vw 0;
+    }
+}
+
+/* ----------------------------------------------------------------------------
+SCRIPT
+---------------------------------------------------------------------------- */
+
+.spark5 {
+    background-color: white;
+    width: 3px;
+    height: 3px;
+    position: relative;
+    border-radius: 50%;
+    animation: fade 5s linear both;
+}
+
+.spark4 {
+    background-color: white;
+    width: 3px;
+    height: 3px;
+    position: relative;
+    border-radius: 50%;
+    animation: fade 4.5s linear both;
+}
+
+.spark3 {
+    background-color: white;
+    width: 3px;
+    height: 3px;
+    position: relative;
+    border-radius: 50%;
+    animation: fade 4s linear both;
+}
+
+.spark2 {
+    background-color: white;
+    width: 3px;
+    height: 3px;
+    position: relative;
+    border-radius: 50%;
+    animation: fade 3.5s linear both;
+}
+
+.spark1 {
+    background-color: white;
+    width: 3px;
+    height: 3px;
+    position: relative;
+    border-radius: 50%;
+    animation: fade 3s linear both;
+}
+
+@keyframes fade {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
