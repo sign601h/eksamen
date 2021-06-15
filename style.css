@@ -55,8 +55,6 @@ a .planet:hover {
     border-color: yellow;
     text-decoration: underline;
     text-decoration-color: yellow;
-    transition-duration: 0.7;
-    text-decoration-thickness: 0.13vw;
 }
 
 #container {
@@ -347,7 +345,7 @@ PORTFOLIO
 .back:hover,
 #left:hover,
 #right:hover,
-#more:hover {
+.more:hover {
     opacity: 1;
 }
 
@@ -421,13 +419,13 @@ UNDERSIDE
     height: auto;
 }
 
-underside #container {
+section #container {
     display: flex;
     overflow: scroll;
     justify-content: space-evenly;
 }
 
-#videre {
+.videre {
     margin: 3vh 0;
     display: flex;
     align-items: center;
@@ -437,7 +435,7 @@ underside #container {
     z-index: 2;
 }
 
-#more {
+.more {
     background-image: url(right.svg);
     height: 30px;
     width: 30px;
@@ -495,7 +493,7 @@ MOBILE
         top: 2.5vw;
     }
 
-    underside #container {
+    section #container {
         display: inline-block;
     }
 
